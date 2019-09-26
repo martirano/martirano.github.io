@@ -1,5 +1,4 @@
-This website is built with Jekyll builder
+Salvatore Martirano official website and archive
+by Dorothy Martirano
 
-https://jekyllrb.com/
-
-The generated webpages are stored under _site folder. 
+web designer: [Allen Wu](http://allenloves.github.io)
