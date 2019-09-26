@@ -1,0 +1,228 @@
+---
+layout: default2
+---
+            <div class="row tm-tabs-container">
+                <div class="tm-tab-links-col">
+                    <nav>
+                        <ul class="tm-tabs">
+                            {% for album in site.data.music %}
+                            <li class="tm-tab-link-item">
+                                <a id="tab{{ forloop.index }}" href="javascript:void(0)" class="tm-tab-link{% if forloop.index == 1 %} active{% endif %}">
+                                    <i class="fa fa-music tm-tab-icon"></i>
+                                    <span class="tm-tab-link-label">{{album.album}}</span>
+                                </a>
+                            </li>
+                            {% endfor %}
+
+                            <!--
+                            <li class="tm-tab-link-item">
+                                <a id="other" href="javascript:void(0)" class="tm-tab-link">
+                                    <i class="fa fa-music tm-tab-icon"></i>
+                                    <span class="tm-tab-link-label">Other Recordings</span>
+                                </a>
+                            </li>
+                        -->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="tm-tab-content-box-col">
+                    {% for album in site.data.music %}
+                    <div id="tab{{ forloop.index }}C" class="tm-tab-content-box">
+                        <img src="img/{{ album.img }}" alt="Image" class="img-fluid tm-tab-content-img">
+                        
+                        <div class="tm-tab-content-text">
+                            <p>{{ album.intro }}</p>
+                            <ul class="tm-ul-plus">
+                                {% for item in album.list %}
+                                <li> {{ item.title }} {% if item.year %}({{ item.year }}){% endif %}
+                                    <audio src="music/{{ item.filename }}" preload="auto" />
+                                }
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>                        
+                    </div>
+                    {% endfor %}
+
+                    <!--
+                    <div id="otherC" class="tm-tab-content-box">
+                        <div class="tm-tab-content-text">
+                            {% include otherrecordings.html %}
+                        </div>                        
+                    </div>
+                -->
+
+                
+<!--
+                    <div id="tab2C" class="tm-tab-content-box">
+                        <img src="img/img-11-05.jpg" alt="Image" class="img-fluid tm-tab-content-img">
+                        
+                        <div class="tm-tab-content-text">
+                            <p>Nam tortor lacus, fringilla nex quam a, volupat laoreet dui. Nunc consequat nulla vel ipsum cursus, eu tempor mauris gravida. Donec sit amet.                         
+                            </p>
+                            <ul class="tm-ul-plus">
+                                <li>Vestibulum ullamcorper et lectus</li>
+                                <li>Donec efficitur placer magna</li>
+                                <li>Praesent venenatis diam pellentesque</li>
+                                <li>Nunc consequat nulla vel ipsum</li>
+                            </ul>
+                        </div>                        
+                    </div>
+
+                    <div id="tab3C" class="tm-tab-content-box">
+                        <img src="img/img-11-03.jpg" alt="Image" class="img-fluid tm-tab-content-img">
+                        
+                        <div class="tm-tab-content-text">
+                            <p><em>Nunc finibus vehicula pharetra. Fusce sed ante a odio fringilla bibendum. Donec et pharetra orci. Praesent tempus efficitur tellus.</em>                        
+                            </p>
+                            <ul class="tm-ul-plus">
+                                <li>Vestibulum ullamcorper et lectus</li>
+                                <li>Donec efficitur placer magna</li>
+                                <li>Praesent venenatis diam pellentesque</li>
+                                <li>Nunc consequat nulla vel ipsum</li>
+                            </ul>
+                        </div>                        
+                    </div>
+
+                    <div id="tab4C" class="tm-tab-content-box">
+                        <img src="img/img-11-02.jpg" alt="Image" class="img-fluid tm-tab-content-img">
+                        
+                        <div class="tm-tab-content-text">
+                            <p>Donec a suscipit turpis. Duis hendrerit risus arcu, et eleifend ipsum vaius vel. Nam tortor lacus, fringilla nec quam a, volupat laoreet dui.                       
+                            </p>
+                            <ul class="tm-ul-plus">
+                                <li>Vestibulum ullamcorper et lectus</li>
+                                <li>Donec efficitur placer magna</li>
+                                <li>Praesent venenatis diam pellentesque</li>
+                                <li>Nunc consequat nulla vel ipsum</li>
+                            </ul>
+                        </div>                        
+                    </div>
+
+                    <div id="tab5C" class="tm-tab-content-box">
+                        <img src="img/img-11-01.jpg" alt="Image" class="img-fluid tm-tab-content-img">
+                        
+                        <div class="tm-tab-content-text">
+                            <p>Proin volupat luctus lacus, sollicitudin dictum orci vestibulum eu. Sed quis fringilla nulla.                      
+                            </p>
+                            <ul class="tm-ul-plus">
+                                <li>Vestibulum ullamcorper et lectus</li>
+                                <li>Donec efficitur placer magna</li>
+                                <li>Praesent venenatis diam pellentesque</li>
+                                <li>Nunc consequat nulla vel ipsum</li>
+                            </ul>
+                        </div>                        
+                    </div>
+
+                    <div id="tab6C" class="tm-tab-content-box">
+                        <img src="img/img-11-01.jpg" alt="Image" class="img-fluid tm-tab-content-img">
+                        
+                        <div class="tm-tab-content-text">
+                            <p>Proin volupat luctus lacus, sollicitudin dictum orci vestibulum eu. Sed quis fringilla nulla.                      
+                            </p>
+                            <ul class="tm-ul-plus">
+                                <li>Vestibulum ullamcorper et lectus</li>
+                                <li>Donec efficitur placer magna</li>
+                                <li>Praesent venenatis diam pellentesque</li>
+                                <li>Nunc consequat nulla vel ipsum</li>
+                            </ul>
+                        </div>                        
+                    </div>
+
+                    <div id="tab7C" class="tm-tab-content-box">
+                        <img src="img/img-11-01.jpg" alt="Image" class="img-fluid tm-tab-content-img">
+                        
+                        <div class="tm-tab-content-text">
+                            <p>Proin volupat luctus lacus, sollicitudin dictum orci vestibulum eu. Sed quis fringilla nulla.                      
+                            </p>
+                            <ul class="tm-ul-plus">
+                                <li>Vestibulum ullamcorper et lectus</li>
+                                <li>Donec efficitur placer magna</li>
+                                <li>Praesent venenatis diam pellentesque</li>
+                                <li>Nunc consequat </li>
+                                <li>Nunc consequat nul</li>
+                                <li>Nunc consequat null</li>
+                                <li>Nunc consequat nulla </li>
+                                <li>Nunc consequat nulla ve</li>
+                                <li>Nunc consequat nulla vel </li>
+                                <li>Nunc consequat nulla vel ip</li>
+                                <li>Nunc consequat nulla vel ipsum</li>
+                            </ul>
+                        </div>                        
+                    </div>
+-->
+                </div>
+            </div>
+          
+<!--
+            <div class="row tm-services-row-2">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 tm-services-col">
+                    <div class="tm-about-box-3 tm-services-box-3 tm-blue-bordered">
+                        <h2 class="tm-services-title tm-blue-text">Salvatore Martirano - Sampler: Everything Goes When the Whistle Blows (1985)</h2>
+                        <iframe width="390" height="220" src="https://www.youtube.com/embed/1fAWW-vzi5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 tm-services-col">
+                    <div class="tm-about-box-3 tm-services-box-3 tm-blue-bg">
+                        <h2 class="tm-services-title tm-yellow-text">Salvatore Martirano - L's GA for Gassed-Masked Politico,Helium Bomb,and Two Channel Tape</h2>
+                        <iframe width="390" height="220" src="https://www.youtube.com/embed/Q3B7alymQ6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 tm-services-col">
+                    <div class="tm-about-box-3 tm-services-box-3 tm-blue-bordered">
+                        <h2 class="tm-services-title tm-blue-text">Salvatore Martirano - Stuck on Stella Performed by J.B. Floyd.</h2><br/>
+                        <iframe width="390" height="220" src="https://www.youtube.com/embed/E2yLZS3-xh8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+-->
+            <div class="row tm-services-row">
+<!--
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-services-col-left">
+                    
+                    <div>
+                        <img src="img/img-11-01.jpg" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                        <img src="img/img-11-07.jpg" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                        <img src="img/img-11-08.jpg" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                        <img src="img/img-11-05.jpg" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                        <img src="img/img-11-05.jpg" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                        <img src="img/img-11-05.jpg" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                    </div>
+                    
+                </div>
+-->                
+                    
+                    <div class="tm-services-box">
+                        <h2 class="tm-blue-text tm-services-title">List of Compositions</h2>
+                            <ul>
+                                {% for item in site.data.composition %}
+                                <li>{{ item.year}} - <b>{{ item.title }}</b>{% if item.instrument %} for {{ item.instrument }}{% endif %}{% if item.note %}, {{ item.note}}{% endif %}.{% if item.duration %}  ({{ item.duration }}){% endif %}</li><br/>
+                                {% endfor %}  
+                            </ul>
+                    </div>
+
+            </div>
+
+
+            <div class="row tm-services-row">           
+                    <div class="tm-services-box">
+                        <h2 class="tm-blue-text tm-services-title">List of Videos</h2>
+                            <ul>
+                                {% for item in site.data.video %}
+                                <li>{{ item.year}} - <b>{{ item.title }}</b>  ({{ item.duration }})</li><br/>
+                                {% endfor %}
+                            </ul>
+                    </div>
+
+            </div>
+
+
+        <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ 
+        <div id="loader-wrapper">
+            
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+-->
+               

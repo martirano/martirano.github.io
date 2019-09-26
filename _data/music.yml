@@ -1,0 +1,190 @@
+- album: "O, O, O, O,<br/> That Shakespeherian Rag"
+  intro: "Thomas Hilbish conducting the Princeton Chamber Singers.<br/>Composer's Recordings Inc. (#164)"
+  img: img-11-04.jpg
+  list:
+
+  - title: "O, O, O, O, That Shakespeherian Rag (1959) - I. Winter"
+    year: 1959
+    filename: "OOOO/O,O,O,O,_I.mp3" 
+
+  - title: "O, O, O, O, That Shakespeherian Rag (1959) - II. Lullaby"
+    year: 1959
+    filename: "OOOO/O,O,O,O,_II.mp3" 
+
+  - title: "O, O, O, O, That Shakespeherian Rag (1959) - III. Warming"
+    year: 1959
+    filename: "OOOO/O,O,O,O,_III.mp3" 
+
+  - title: "O, O, O, O, That Shakespeherian Rag (1959) - IV. Spring"
+    year: 1959
+    filename: "OOOO/O,O,O,O,_IV.mp3" 
+
+  - title: "Stuck On Stella"
+    year: 19..
+    filename: "OOOO/Stuck_On_Stella.mp3"
+
+  - title: "Ballad"
+    year: 1966
+    filename: "OOOO/Ballad.mp3"
+
+  - title: "Chansons Innocentes - I. In Just Spring"
+    year: 1957
+    filename: "OOOO/Chansons_Innocentes_I.mp3"
+
+  - title: "Chansons Innocentes - II. Hist Whist"
+    year: 1957
+    filename: "OOOO/Chansons_Innocentes_II.mp3"
+
+  - title: "Chansons Innocentes - III. Tumbling Hair"
+    year: 1957
+    filename: "OOOO/Chansons_Innocentes_III.mp3" 
+
+  - title: "Octet"
+    year: 1963
+    filename: "OOOO/Octet.mp3"
+    
+  - title: "Cocktail Music"
+    year: 1962
+    filename: "OOOO/Cocktail_Music.mp3"
+
+
+- album: "Salvatore Martirano:<br/>Retrospective<br/>1963 - 1993"
+  intro: Computer Music Series, CDCM Records
+  img: img-11-03.jpg
+  list:
+    - title: "Underworld"
+      year: 1964-65
+      filename: Computer_Age/01.mp3
+
+    - title: "SATBehind Demo"
+      year: 1992
+      filename: Computer_Age/02.mp3
+
+    - title: "Look at the back of my head for a while"
+      year: 1974
+      filename: Computer_Age/03.mp3
+
+    - title: "Four not Two"
+      year: 1987
+      filename: Computer_Age/04.mp3
+
+    - title: "Electronic Dance No. 1"
+      year: 1962
+      filename: Computer_Age/05.mp3
+
+    - title: "L's. G. A."
+      year: 1968
+      filename: Computer_Age/06.mp3
+
+- album: "Salvatore Martirano Mass"
+  intro: "The Ineluctable Modality<br/>Edwin London, conductor<br/>New World Records  NW 210"
+  img: img-11-02.jpg
+  list: 
+    - title: "Kyrie"
+      filename: Salvatore_Martirano_Mass/01.mp3
+
+    - title: "Gloria"
+      filename: Salvatore_Martirano_Mass/02.mp3
+
+    - title: "Credo"
+      filename: Salvatore_Martirano_Mass/03.mp3
+
+    - title: "Sanctus & Benetdictus"
+      filename: Salvatore_Martirano_Mass/04.mp3
+
+    - title: "Agnus Dei"
+      filename: Salvatore_Martirano_Mass/05.mp3
+
+- album: "Phleu for Amplified<br/> Flute and YahaSALmaMAC<br/> MIDI Orchestra"
+  intro: NEUMA Records
+  img: img-11-01.jpg
+  list: 
+    - title: "phee"
+      filename: Phleu/01.mp3
+
+    - title: "phlie"
+      filename: Phleu/02.mp3
+
+    - title: "phoo"
+      filename: Phleu/03.mp3
+
+    - title: "phum"
+      filename: Phleu/04.mp3
+
+- album: "LON/dons"
+  intro: "The Cleveland Chamber Symphony, Edwin London, cond.<br/>Trumedia CD"
+  img: img-11-05.jpg
+  list:
+    - title: "Sound and Logic +"
+      year: 1988
+      filename: LON/01.mp3
+
+    - title: "Sugar"
+      year: 1988
+      filename: LON/02.mp3
+
+    - title: "Ludwig's Bait"
+      year: 1988
+      filename: LON/03.mp3
+
+- album: "CDCM Computer Music<br/> Series Vol. 3"
+  intro: "For Amplified Zeta Violin, Dorothy Martirano<br/>and The yahaSALmaMAC MIDI orchestra<br/>Centaur CD, CRC 2045"
+  img: img-11-06.jpg
+  list:
+    - title: "Sampler: Everything Goes When The Whistle Blow"
+      filename: CDCM/01.mp3
+
+- album: "Intersections and Detours"
+  intro: "For winds and percussion<br/>Tone Road Ramblers<br/>Flute:  John Fonvile<br/>Clarinet:  Eric Mandat<br/>Trumpet:  Ray Sasaki<br/>Trombone:  Morgan Powell, Jim Staley<br/>Percussion:  Michael Udow<br/>Einstein Records"
+  img: img-11-07.jpg
+  list:
+    - title: "Thrown"
+      filename: Intersections/01.mp3
+
+- album: "The New American<br/> Scene Vol. 3"
+  intro: "Cleveland Chamber Symphony<br/>Edwin London, Music Director<br/>Albany Records"
+  img: img-11-08.jpg
+  list:
+    - title: "Isabela"
+      filename: American/01.mp3
+
+- album: "CDCM Computer Music<br/> Series Volume 14"
+  intro: "The Virtuoso in the Computer Age -- IV<br/>for Amplified Flute, Clarinet and Double Bass and Synthetic Orchestra<br/>Flute: Tim Lane<br/>Clarinet: Eric Mandat<br/>Double Bass: Michael Cameron"
+  img: img-11-09.jpg
+  list:
+    - title: "UIUS"
+      filename: CDCM14/05.mp3
+
+    - title: "Jest fa' Laffs"
+      filename: CDCM14/06.mp3
+
+- album: "Life Field"
+  intro: "Salvatore Martirano Salmar construction<br/>David Rosenboom buchla music easel 200 series electric music box with homemade digital control system"
+  img: img-11-11.jpg
+  list:
+    - title: "BC - AD II"
+      filename: Life_Field/06.mp3
+
+- album: "Italian-American<br/> Electronic Music Dramas"
+  intro: "Emergent Music And Visual Music: Inside Studies, CD 2<br/>Music Synthesizer duet by<br/>Ron Pellegrino, ARP 2600 Synthesizer, Two Synth AKSs and Buchla 200 Series<br/>Sal Martirano, SalMar construction"
+  img: img-11-12.jpg
+  list:
+    - title: "Live recording in Phoenix '73 Festival of New Music"
+      filename: Italian-American/01.mp3
+
+    - title: "Live recording in Sal's music studio, 1974"
+      filename: Italian-American/02.mp3
+
+    - title: "Live recording in Sal's music studio, 1974"
+      filename: Italian-American/03.mp3
+
+    - title: "Live recording in Sal's personal facility, 1975"
+      filename: Italian-American/04.mp3
+
+- album: "The SalMar Construction"
+  intro: "Live improvisation by Salvatore Martirano in the Institut de Recherche et Coordination Acoustique/Musique (IRCAM)"
+  img: img-11-13.jpg
+  list: 
+    - title: "The SalMar"
+      year: 1983
+      filename: SamMarIRCAM/01.mp3

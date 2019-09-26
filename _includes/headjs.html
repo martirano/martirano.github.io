@@ -1,0 +1,28 @@
+<!-- load different pic each time -->
+<script type="text/javascript">
+    var imageURLsB = {{site.data.bimg | split: ", " | array_to_sentence_string: ""}};
+    function getBImageTag() {
+        var img = '<a href= "img/';
+        var randomIndex = Math.floor(Math.random() * imageURLsB.length);
+        img += imageURLsB[randomIndex];
+        img += '">';
+        img += '<img src="img/';
+        img += imageURLsB[randomIndex];
+        img += '"  alt="Image" class="img-fluid tm-header-img"></a>';
+        return img;
+     }
+</script>
+
+<script type="text/javascript">
+    var imageURLsS = {{site.data.simg | split: ", " | array_to_sentence_string: ""}};
+    function getSImageTag() {
+        var img = '<a href= "img/';
+        var randomIndex = Math.floor(Math.random() * imageURLsS.length);
+        img += imageURLsS[randomIndex];
+        img += '">';
+        img += '<img src="img/';
+        img += imageURLsS[randomIndex];
+        img += '"  alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"></a>';
+        return img;
+     }
+</script>
