@@ -35,7 +35,7 @@ layout: default2
                             <ul class="tm-ul-plus">
                                 {% for item in album.list %}
                                 <li> {{ item.title }} {% if item.year %}({{ item.year }}){% endif %}
-                                    <audio src="music/{{ item.filename }}" preload="auto" />
+                                    <audio src="music/{{ item.filename }}" preload="false" />
                                 }
                                 </li>
                                 {% endfor %}
