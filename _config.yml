@@ -2,3 +2,6 @@
 title:		           "Salvatore<br/>Martirano"
 description:	       "All Rights Reserved "
 author:              "Dorothy Martirano"
+
+exclude:
+  - Rakefile

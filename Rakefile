@@ -15,7 +15,7 @@ task :prod do
   stdout, stderr, status = Open3.capture3(rm_cmd)
   exit if !status.success?
 
-  cp_cmd "cp -r _site/* #{prod_loc} && cd #{prod_loc} && git add *"
+  cp_cmd = "cp -r _site/* #{prod_loc} && cd #{prod_loc} && git add *"
   stdout, stderr, status = Open3.capture3(cp_cmd)
   exit if !status.success?
 end
