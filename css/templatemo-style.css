@@ -568,6 +568,24 @@ span.lsga-score {
 }
 
 
+/*********************************************/
+ * Sal Martirano Digital Collection   
+ */
+div#smdc-faq.accordion {
+	max-width: 800px;
+}
+div#smdc-faq.accordion div.card {
+	max-width: 800px;
+}
+div#smdc-faq blockquote {
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+
+
+/*********************************************/
 .tm-services-row {
 	display: -ms-flexbox;
 	display: -webkit-box;
