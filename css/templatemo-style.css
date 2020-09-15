@@ -154,6 +154,7 @@ p {	line-height: 2.1; }
 	max-height:100%;
 }
 
+
 .navbar { padding: 0; }
 
 .navbar-nav .nav-item {
@@ -162,7 +163,7 @@ p {	line-height: 2.1; }
     text-align: center;
     background-color: #cccccc;  
     height: 60px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     display: -ms-flexbox;
     display: -webkit-box;
     display: -webkit-flex;
@@ -178,6 +179,20 @@ p {	line-height: 2.1; }
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
+/*jjm***************************/
+div#nav-container {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	/*-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;*/
+        width: 100%;
+}
+/****************************/
+
 
 .tm-nav-item-pair {
 	display: -ms-flexbox;
@@ -241,8 +256,8 @@ button:focus { outline: none; }
 	display: -webkit-flex;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    -webkit-flex-wrap: wrap;
-	        flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .tm-row-margin-b { margin-bottom: 50px; }
@@ -482,17 +497,17 @@ LsGA Triptych
  151x235 21.66%
 */
 div#lsga-triptych { border-bottom: 5px #202020;}
-div#lsga-triptych img#lsga-triptych1 {
+img#lsga-triptych1 {
 	width: 18.02%;
 	height: auto;
 	float: left;
 }
-div#lsga-triptych img#lsga-triptych2 {
+img#lsga-triptych2 {
 	width: 65.15%;
 	height: auto;
 	float: left;
 }
-div#lsga-triptych img#lsga-triptych3 {
+img#lsga-triptych3 {
 	width: 16.82%;
 	height: auto;
 	float: left;
@@ -1028,8 +1043,10 @@ span.lsga-score {
 	}
 
 	.navbar-nav .nav-item {
-		height: 80px;
-		max-width: 249px; 
+		/*height: 60px;
+		max-width: 149px; */
+		height: auto;
+		max-width: auto; 
 	}
 
 	.navbar { position: relative; }
