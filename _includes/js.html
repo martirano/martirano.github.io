@@ -1,12 +1,24 @@
 
         <!-- load JS files -->
-        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
-        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) -->
-        <script src="js/bootstrap.min.js"></script>             <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
-        <script src="js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- enable jquery migrate plugin to see the deprecation errors coming from Magnific Popup-->
+        <!-- <script src="https://code.jquery.com/jquery-migrate-3.3.1.js"></script> -->
+
+        <script src="js/popper.min.js"></script>  
+        <script src="js/bootstrap.min.js"></script>  
+        <script src="js/jquery.magnific-popup.min.js"></script>
+
         <script>     
-       
-            $(window).load(function(){
+            $(window).on("load",function(){
+
+            $("nav.navbar").find(".active > a.nav-link").addClass("text-white");
+
+            /* if we do ajax then this will be needed -jjm
+            $("nav.navbar .nav-link").on("click", function(){
+               $("nav.navbar").find(".active").removeClass("active");
+               $(this).addClass("active");
+            });
+            */
 
             /* Gallery pop up
             -----------------------------------------*/
@@ -22,7 +34,7 @@
                 //$('#tab1C').fadeIn('slow');
                 $('#tab1C').show();
 
-                $('.tm-tab-link').click(function(){
+                $('.tm-tab-link').on("click",function(){
                   
                     var t = $(this).attr('id');
                     
@@ -39,8 +51,10 @@
                 $('body').addClass('loaded');
              });
 
+
             /* Google map
             ------------------------------------------------*/
+/*
             var map = '';
             var center;
 
@@ -77,6 +91,7 @@
             $(function() {                
                 loadGoogleMap(); // Google Map
             });
+*/
         </script>  
 
         <script src="js/audio.min.js"></script>
