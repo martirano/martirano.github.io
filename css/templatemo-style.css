@@ -129,11 +129,20 @@ p {	line-height: 2.1; }
 	color: #0264cf;
 	font-size: 3rem; 
 }
-
 .tm-site-name-h2 {
 	color: #6c6c6c;
 	font-size: 1.4rem;
 }
+.navbar-brand-sal { 
+	color: #0264cf;
+	font-size: 1.5rem; 
+        padding-right: 20px;
+        padding-top: 8px;
+}
+img#nav-spacer-img {
+	padding-bottom: 2px;
+}
+
 
 .container-fluid { max-width: 1530px; }
 
@@ -1068,6 +1077,7 @@ div#smdc-faq blockquote {
 	}
 
 	.navbar { position: relative; }
+
 	.tm-content-box { padding: 70px 20px 40px; }
 
 	.tm-testi-sig {
