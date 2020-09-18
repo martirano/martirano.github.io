@@ -829,6 +829,18 @@ div#smdc-faq blockquote {
 }
 
 
+div.header-rimg-div {
+  max-width: 50%;
+}
+div.header-simg-div {
+  max-width: 25%;
+}
+@media (min-width: 576px) {
+  div.header-img-div {
+    display: block;
+  }
+}
+
 @media (min-width: 425px) {
 	.tm-social-link {
 		font-size: 1.5em;
