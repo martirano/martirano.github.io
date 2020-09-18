@@ -140,7 +140,7 @@ p {	line-height: 2.1; }
         padding-top: 8px;
 }
 img#nav-spacer-img {
-	padding-bottom: 2px;
+	margin-bottom: 17px;
 }
 
 
@@ -708,7 +708,7 @@ div#smdc-faq blockquote {
 }
 
 .tm-tab-icon {
-	width: 83px;
+    width: 83px;
     height: 83px;
     border-right: 1px solid;
     font-size: 2rem;
