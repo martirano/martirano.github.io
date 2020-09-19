@@ -534,7 +534,6 @@ div#smdc-faq blockquote {
 
 
 
-
 /*********************************************/
 .tm-services-row {
 	display: -ms-flexbox;
@@ -771,28 +770,21 @@ div#smdc-faq blockquote {
 	width: 100%; 
 }
 
-.tm-blog-post-row { 
-	display: -webkit-box; 
-	display: -webkit-flex; 
-	display: -ms-flexbox; 
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	padding-top: 50px; 
-}
-
 .tm-blog-post-box {
 	background-color: #e8e8e8;
 	margin: 0 auto;
-	max-width: 600px;
+        padding-top: 20px;
+	max-width: 400px;
 	height: 100%;
 }
 
 .tm-blog-post-margin-b,
 .tm-blog-post-margin-b-0 { margin-bottom: 50px; }
 
-.tm-blog-post-text-box-outer { padding: 25px 30px; }
+.tm-blog-post-text-box-outer { 
+        padding: 20px 20px; 
+        margin-top: 15px;
+}
 
 .tm-blog-post-title {
 	color: #0066CC; 
@@ -815,17 +807,6 @@ div#smdc-faq blockquote {
 .tm-blog-post-link:hover,
 .tm-blog-post-link:focus {
 	color: #0066CC;
-}
-
-.tm-contact-form-row { padding: 30px 15px 60px; }
-.tm-faq-row { padding: 50px 15px 0; }
-
-.tm-contact-form-col-left { margin-bottom: 2rem; }
-
-.tm-contact-form-title { 
-	font-size: 2.2rem;
-    font-weight: 300;
-	margin-bottom: 8%; 
 }
 
 
@@ -855,11 +836,6 @@ div.header-simg-div {
 	.tm-about-row {	padding: 50px; }
 	.tm-about-description { margin-bottom: 50px; }
 	.tm-services-description { margin-bottom: 50px; }
-}
-
-@media (min-width: 544px) {			
-	.tm-contact-form-row { padding: 30px; }
-	.tm-faq-row { padding: 30px 30px 0; }
 }
 
 @media (min-width: 641px) {
@@ -925,7 +901,6 @@ div.header-simg-div {
 		margin-top: 0; 
 	}
 
-	.tm-blog-post-row { padding-top: 100px; }
 }
 
 @media (min-width: 768px) {
@@ -967,11 +942,8 @@ div.header-simg-div {
 
 	.tm-tab-links-col { width: 45%; }
 	.tm-tab-content-box-col { width: 55%; }
-	.tm-blog-post-text-box-outer { padding: 45px 50px; }
+	.tm-blog-post-text-box-outer { padding: 40px 40px; }
 	.tm-blog-post-margin-b { margin-bottom: 50px; }
-	.tm-contact-form-row { padding: 60px 40px; }
-	.tm-faq-row { padding: 60px 40px 0; }
-	.tm-contact-form-col-left { margin-bottom: 0; }
 }
 
 @media (min-width: 992px) {
@@ -1045,8 +1017,6 @@ div.header-simg-div {
 	.tm-tab-links-col { width: 35%; }
 	.tm-tab-content-box-col { width: 65%; }
 	.tm-blog-post-margin-b { margin-bottom: 100px; }
-	.tm-contact-form-row { padding: 130px 70px; }
-	.tm-faq-row { padding: 130px 70px 0; }
 }
 
 /* IE hack
