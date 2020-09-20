@@ -1,28 +1,49 @@
 <!-- load different pic each time -->
+
 <script type="text/javascript">
-    var imageURLsB = {{site.data.bimg | split: ", " | array_to_sentence_string: ""}};
-    function getBImageTag() {
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+      return array;
+    }
+
+    //rectangular images
+    var imageURLsB = shuffle({{site.data.bimg | split: ", " | array_to_sentence_string: ""}});
+
+    //square images
+    var imageURLsS = shuffle({{site.data.simg | split: ", " | array_to_sentence_string: ""}});
+
+    function getBImageTag(inc) {
+        var imgIndex=inc;
         var img = '<a href= "img/';
-        var randomIndex = Math.floor(Math.random() * imageURLsB.length);
-        img += imageURLsB[randomIndex];
+        img += imageURLsB[imgIndex];
         img += '">';
         img += '<img src="img/';
-        img += imageURLsB[randomIndex];
+        img += imageURLsB[imgIndex];
         img += '"  alt="Image" class="img-fluid tm-header-img"></a>';
         return img;
      }
-</script>
 
-<script type="text/javascript">
-    var imageURLsS = {{site.data.simg | split: ", " | array_to_sentence_string: ""}};
-    function getSImageTag() {
-        var img = '<a href= "img/';
-        var randomIndex = Math.floor(Math.random() * imageURLsS.length);
-        img += imageURLsS[randomIndex];
+    function getSImageTag(inc) {
+        var imgIndex=inc;
+        var img = '<a href="img/';
+        img += imageURLsS[imgIndex];
         img += '">';
         img += '<img src="img/';
-        img += imageURLsS[randomIndex];
-        img += '"  alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"></a>';
+        img += imageURLsS[imgIndex];
+        <!--img-fluid scales with parent element-->
+        img += '"  alt="Image" class="img-fluid tm-header-img"></a>';
         return img;
      }
 </script>
